@@ -41,7 +41,8 @@ namespace ProjectXenix.iTunes
             {
                 if (song != null)
                 {
-                    choices.Add(string.Format("{0} play song {1}", anchor, song));
+                    var treatedSongName = song.Replace("\"", "");
+                    choices.Add(string.Format("{0} play song {1}", anchor, treatedSongName));
                 }
             }
 
